@@ -1,0 +1,13 @@
+/* You can add global styles to this file, and also import other style files */
+$mdc-theme-primary: #9c27b0;
+$mdc-theme-secondary: #76ff03;
+$mdc-theme-background: #fff;
+@import "@angular-mdc/theme/material-components-web";
+/*
+"stylePreprocessorOptions": {
+    "includePaths": [
+      ".",
+      "../node_modules"
+    ]
+  }
+  */
