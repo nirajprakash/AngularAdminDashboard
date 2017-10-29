@@ -3,6 +3,8 @@ import { ModuleWithProviders, NgModule } from '@angular/core';
 import { MaterialModule } from './material.module';
 import { Routes, RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
+
+import { FlexLayoutModule } from '@angular/flex-layout';
 //import {ContainerModule} from './containers/container.module';
 
 
@@ -63,6 +65,7 @@ const rootRouting: ModuleWithProviders = RouterModule.forRoot(routes, { useHash:
   imports: [
     BrowserModule,
     MaterialModule,
+    FlexLayoutModule,
     rootRouting
   ],
   providers: [],

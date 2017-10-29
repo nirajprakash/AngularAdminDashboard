@@ -2,7 +2,21 @@
 $mdc-theme-primary: #9c27b0;
 $mdc-theme-secondary: #76ff03;
 $mdc-theme-background: #fff;
-@import "@angular-mdc/theme/material-components-web";
+@import "@angular-mdc/theme/material.scss";
+
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+}
+
+// .demo-toolbar--primary {
+//   @include mdc-theme-prop(background-color, $mdc-theme-secondary);
+// }
 /*
 "stylePreprocessorOptions": {
     "includePaths": [
