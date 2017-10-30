@@ -1,0 +1,64 @@
+.tdw-font-open-sans{
+    font-family: $font-open-sans;
+}
+.tdw-font-comfortaa{
+    font-family: $font-comfortaa;
+}
+
+.tdw-font-light{
+    font-weight: $font-light;
+}
+.tdw-font-normal{
+    font-weight: $font-normal;
+}
+.tdw-font-bold{
+    font-weight: $font-bold;
+}
+
+.tdw-font-bolder{
+    font-weight: $font-bolder;
+}
+
+.tdw-font-24{
+    font-size: $font-24;
+ }
+
+.tdw-font-20{
+    font-size: $font-20;
+ }
+
+.tdw-font-18{
+    font-size: $font-18;
+ }
+
+.tdw-font-16{
+    font-size: $font-16;
+ }
+
+.tdw-font-14{
+    font-size: $font-14;
+ }
+
+.tdw-font-12{
+    font-size: $font-12;
+ }
+ .tdw-font-10{
+    font-size: $font-10;
+ }
+
+ .tdw-font-tab{
+font-size: $font-12;
+ }
+
+
+@media (max-width: $resM) {
+ .tdw-font-tab{
+     font-size: $font-10;
+ }
+}
+
+@media (max-width: $resS) {
+ .tdw-font-tab{
+     font-size: $font-8;
+ }
+}

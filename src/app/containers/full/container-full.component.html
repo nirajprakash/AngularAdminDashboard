@@ -49,18 +49,22 @@
         <mdc-permanent-drawer-content>
             <mdc-list-group>
                 <mdc-list>
+                    <h5 class="drawer-item-title tdw-font-light mdc-color-text--grey-700">Dashboard</h5>
                     <a mdc-list-item [routerLink]="['home']">
                         <mdc-icon mdc-list-item-start>home</mdc-icon>Home
                     </a>
                     <mdc-list-divider></mdc-list-divider>
+                    <h5 class="drawer-item-title tdw-font-light mdc-color-text--grey-700">Map</h5>
                     <a mdc-list-item [routerLink]="['getting-started']">
                         <mdc-icon mdc-list-item-start>touch_app</mdc-icon>Getting Started
                     </a>
                     <mdc-list-divider></mdc-list-divider>
+                    <h5 class="drawer-item-title tdw-font-light mdc-color-text--grey-700">Pos</h5>
                     <a mdc-list-item [routerLink]="['core']">
                         <mdc-icon mdc-list-item-start>keyboard_arrow_right</mdc-icon>Core Modules
                     </a>
                     <mdc-list-divider></mdc-list-divider>
+                    <h5 class="drawer-item-title tdw-font-light mdc-color-text--grey-700">IoT</h5>
                     <a mdc-list-item *ngFor="let navItem of navLinks" [routerLink]="[navItem.route]">
                         <mdc-icon mdc-list-item-start>{{navItem.icon}}</mdc-icon>{{navItem.name}}
                     </a>

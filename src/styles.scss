@@ -1,9 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import "@angular-mdc/theme/material-components-web/theme/_color_palette";
 $mdc-theme-primary: #9c27b0;
 $mdc-theme-secondary: #76ff03;
-$mdc-theme-background: #fff;
+$mdc-theme-background: $material-color-grey-100;
 @import "@angular-mdc/theme/material.scss";
 
+@import "app/theme/index";
 
 html {
   height: 100%;
@@ -12,6 +15,7 @@ html {
 body {
   height: 100%;
   margin: 0;
+  background: $mdc-theme-background;
 }
 
 // .demo-toolbar--primary {
