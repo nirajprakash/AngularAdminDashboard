@@ -32,3 +32,12 @@
     margin: 12px 0 0;
     padding: 0 20px;
   }
+
+  .mdc-permanent-drawer--fixed::-webkit-scrollbar {
+    background: transparent;
+    width: 8px;
+}
+
+.mdc-permanent-drawer--fixed::-webkit-scrollbar-thumb {
+  background: #bdbdbd;
+}

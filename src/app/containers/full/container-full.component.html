@@ -50,9 +50,12 @@
             <mdc-list-group>
                 <mdc-list>
                     <h5 class="drawer-item-title tdw-font-light mdc-color-text--grey-700">Dashboard</h5>
-                    <a mdc-list-item [routerLink]="['home']">
-                        <mdc-icon mdc-list-item-start>home</mdc-icon>Home
+                    <a mdc-list-item class="tdw-font-light"  *ngFor="let navItem of _vmNavItems.dashboard" [routerLink]="[navItem.route]">
+                        <mdc-icon mdc-list-item-start [ngClass]="[navItem.color]">{{navItem.icon}}</mdc-icon>{{navItem.name}}
                     </a>
+                    <!-- <a mdc-list-item [routerLink]="['home']">
+                        <mdc-icon mdc-list-item-start>home</mdc-icon>Home
+                    </a> -->
                     <mdc-list-divider></mdc-list-divider>
                     <h5 class="drawer-item-title tdw-font-light mdc-color-text--grey-700">Map</h5>
                     <a mdc-list-item [routerLink]="['getting-started']">
