@@ -6,14 +6,15 @@
                 <img src="https://trimox.github.io/angular-mdc-web/assets/hub-192x192.png" width="28" height="28" />
             </a>
             <mdc-toolbar-title>
-                <span fxHide fxShow.gt-sm="true">Angular - Material Design Components</span>
-                <span fxShow fxHide.gt-sm="true">Angular MDC</span>
+                <span fxHide fxShow.gt-sm="true">Admin Dashboard</span>
+                <span fxShow fxHide.gt-sm="true">Dashboard</span>
             </mdc-toolbar-title>
         </mdc-toolbar-section>
         <mdc-toolbar-section [alignEnd]="true" [shrinkToFit]="true">
             <a mdc-toolbar-icon href="https://github.com/trimox/angular-mdc-web" alt="GitHub">
                 <mdc-icon>
-                    <img src="https://trimox.github.io/angular-mdc-web/assets/github-circle-white-transparent.svg" height="20" />
+                    more_vert
+                    <!-- <img src="https://trimox.github.io/angular-mdc-web/assets/github-circle-white-transparent.svg" height="20" /> -->
                 </mdc-icon>
             </a>
         </mdc-toolbar-section>
@@ -57,20 +58,26 @@
                         <mdc-icon mdc-list-item-start>home</mdc-icon>Home
                     </a> -->
                     <mdc-list-divider></mdc-list-divider>
-                    <h5 class="drawer-item-title tdw-font-light mdc-color-text--grey-700">Map</h5>
-                    <a mdc-list-item [routerLink]="['getting-started']">
-                        <mdc-icon mdc-list-item-start>touch_app</mdc-icon>Getting Started
+                    <h5 class="drawer-item-title tdw-font-light mdc-color-text--grey-700">IoT</h5>
+                    <a mdc-list-item *ngFor="let navItem of _vmNavItems.iot" [routerLink]="[navItem.route]">
+                        <mdc-icon mdc-list-item-start>{{navItem.icon}}</mdc-icon>{{navItem.name}}
                     </a>
                     <mdc-list-divider></mdc-list-divider>
+                    <h5 class="drawer-item-title tdw-font-light mdc-color-text--grey-700">Map</h5>
+                   <a mdc-list-item *ngFor="let navItem of _vmNavItems.map" [routerLink]="[navItem.route]">
+                        <mdc-icon mdc-list-item-start>{{navItem.icon}}</mdc-icon>{{navItem.name}}
+                    </a>
+                    <mdc-list-divider></mdc-list-divider>
+                    <h5 class="drawer-item-title tdw-font-light mdc-color-text--grey-700">Pages</h5>
+                    <a mdc-list-item *ngFor="let navItem of _vmNavItems.pages" [routerLink]="[navItem.route]">
+                         <mdc-icon mdc-list-item-start>{{navItem.icon}}</mdc-icon>{{navItem.name}}
+                     </a>
+                     <mdc-list-divider></mdc-list-divider>
                     <h5 class="drawer-item-title tdw-font-light mdc-color-text--grey-700">Pos</h5>
                     <a mdc-list-item [routerLink]="['core']">
                         <mdc-icon mdc-list-item-start>keyboard_arrow_right</mdc-icon>Core Modules
                     </a>
-                    <mdc-list-divider></mdc-list-divider>
-                    <h5 class="drawer-item-title tdw-font-light mdc-color-text--grey-700">IoT</h5>
-                    <a mdc-list-item *ngFor="let navItem of navLinks" [routerLink]="[navItem.route]">
-                        <mdc-icon mdc-list-item-start>{{navItem.icon}}</mdc-icon>{{navItem.name}}
-                    </a>
+                    
                 </mdc-list>
             </mdc-list-group>
         </mdc-permanent-drawer-content>

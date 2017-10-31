@@ -15,32 +15,75 @@ export class ContainerFullComponent {
   _vmNavItems: any = {
     dashboard: [
       {
-        name: "home",
+        name: "Home",
         icon: "home",
         color: "mdc-color-text--purple"
       }, {
-        name: "charts",
+        name: "Charts",
         icon: "insert_charts",
         color: "mdc-color-text--brown",
 
       }, {
-        name: "tables",
+        name: "Tables",
         icon: "list",
         color: "mdc-color-text--green",
       }, {
-        name: "forms",
+        name: "Forms",
         icon: "mode_edit",
         color: "mdc-color-text--indigo",
       }, {
-        name: "widgets",
+        name: "Widgets",
         icon: "widgets",
         color: "mdc-color-text--blue-grey-700",
       }
 
-    ]};
+    ],
+    iot: [
+      {
+        name: "Real-time",
+        icon: "update",
+        color: "mdc-color-text--grey-900"
+      }, {
+        name: "Track",
+        icon: "track_changes",
+        color: "mdc-color-text--grey-900",
+
+      }
+    ],
+    map: [
+      {
+        name: "Location",
+        icon: "location_on",
+        color: "mdc-color-text--grey-900"
+      }, {
+        name: "Route Track",
+        icon: "navigation",
+        color: "mdc-color-text--grey-900",
+
+      }
+    ],
+    pages: [
+      {
+        name: "login",
+        icon: "update",
+        color: "mdc-color-text--grey-900"
+      }, {
+        name: "sign-up",
+        icon: "track_changes",
+        color: "mdc-color-text--grey-900",
+
+      }, {
+        name: "time-line",
+        icon: "timeline",
+        color: "mdc-color-text--grey-900",
+
+      }
+    ],
+    
+  };
 
 
   toggleDrawer() {
-      this.drawer.open();
-    }
+    this.drawer.open();
   }
+}

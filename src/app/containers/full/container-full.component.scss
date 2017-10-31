@@ -32,6 +32,13 @@
     margin: 12px 0 0;
     padding: 0 20px;
   }
+.mdc-permanent-drawer{
+  .mdc-list-item{
+    font-weight: 400;
+    font-size: 0.85rem;
+
+  }
+}
 
   .mdc-permanent-drawer--fixed::-webkit-scrollbar {
     background: transparent;
