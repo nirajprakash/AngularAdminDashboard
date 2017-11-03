@@ -9,4 +9,5 @@ export class DashboardInboxComponent {
 
   _vmMailStatusList = ["read", "unread"];
   _vmMailStatusSelected: string;
+ 
  }

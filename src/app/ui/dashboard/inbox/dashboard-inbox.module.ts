@@ -7,7 +7,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { MaterialModule } from './../../../material.module';
 //import {} from 
 
-import { DashboardInboxComponent } from './index';
+import { DashboardInboxComponent, DashboardInboxItemComponent} from './index';
 //import {ContainerSimpleComponent } from './../../containers'
 
 
@@ -54,10 +54,12 @@ import { DashboardInboxComponent } from './index';
         FlexLayoutModule
     ],
     declarations: [
-        DashboardInboxComponent
+        DashboardInboxComponent,
+        DashboardInboxItemComponent
     ],
     exports: [
-        DashboardInboxComponent
+        DashboardInboxComponent,
+        DashboardInboxItemComponent
     ]
 })
 export class DashboardInboxModule { }
