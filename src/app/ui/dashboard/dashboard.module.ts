@@ -1,10 +1,15 @@
 import { ModuleWithProviders, NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
+import { FormsModule } from '@angular/forms';
+
+import { MaterialModule } from './../../material.module';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 //import {} from 
+import { DashboardInboxModule} from './inbox/dashboard-inbox.module';
 
-import { DashboardHomeComponent } from './index';
+import { DashboardHomeComponent, DashboardInboxComponent} from './index';
 //import {ContainerSimpleComponent } from './../../containers'
 
 
@@ -32,6 +37,10 @@ export const routes: ModuleWithProviders = RouterModule.forChild([
   {
     path: 'home',
     component: DashboardHomeComponent
+  },
+  {
+    path: 'inbox',
+    component: DashboardInboxComponent
   }
   // {
   //   path: '',
@@ -57,6 +66,10 @@ export const routes: ModuleWithProviders = RouterModule.forChild([
 @NgModule({
   imports: [
     CommonModule,
+    MaterialModule,
+    FormsModule,
+    FlexLayoutModule,
+    DashboardInboxModule,
     routes
   ],
   declarations: [

@@ -1,0 +1,25 @@
+<div class="tdw-padding-36">
+
+    <div class="tdw-padding-top-8 tdw-padding-bottom-8" fxLayout="row" fxLayout.xs="row">
+        <div [mdc-elevation]="4" class="tdw-padding-left-8 tdw-padding-right-8 mdc-color--white">
+            <mdc-select label="Filter" [(ngModel)]="_vmMailStatusSelected" name="_mMailStatusList" [disabled]="false" [closeOnScroll]="true">
+                <mdc-select-item *ngFor="let mailStatus of _vmMailStatusList" [value]="[mailStatus]">
+                    {{mailStatus}}
+                </mdc-select-item>
+            </mdc-select>
+        </div>
+        <button mdc-button class="inbox-button-icon mdc-color--white" [raised]="true" [compact]="true">
+            <mdc-icon class="mdc-color-text--grey-800">refresh</mdc-icon>
+        </button>
+
+        <div fxFlex="auto"></div>
+        <button mdc-button class="inbox-button-icon mdc-color--white" [raised]="true" [compact]="true">
+            <mdc-icon class="mdc-color-text--grey-800">keyboard_arrow_left</mdc-icon>
+        </button>
+
+        <button mdc-button class="inbox-button-icon mdc-color--white" [raised]="true" [compact]="true">
+            <mdc-icon class="mdc-color-text--grey-800">keyboard_arrow_right</mdc-icon>
+        </button>
+    </div>
+
+</div>

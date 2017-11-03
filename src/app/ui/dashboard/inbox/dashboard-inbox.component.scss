@@ -1,0 +1,15 @@
+.inbox-button-icon{
+    min-width: 40px;
+    .mdc-button__icon{
+        margin-right: 0px;
+    } 
+}
+
+.mdc-select{
+    border-bottom: none;
+    &:focus{
+        background-color: transparent;
+
+
+    }
+}

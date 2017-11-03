@@ -17,15 +17,17 @@ export class ContainerFullComponent {
       {
         name: "Home",
         icon: "home",
+        route:"/dashboard",
         color: "mdc-color-text--purple"
       }, {
-        name: "Charts",
+        name: "Analysis",
         icon: "insert_charts",
         color: "mdc-color-text--brown",
 
       }, {
-        name: "Tables",
+        name: "Inbox",
         icon: "list",
+        route:"/dashboard/inbox",
         color: "mdc-color-text--green",
       }, {
         name: "Forms",

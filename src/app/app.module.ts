@@ -53,7 +53,7 @@ const routes: Routes = [
   // { path: 'auth', loadChildren: './ui/authentication/authentication.module#AuthenticationModule' }
   //{ path: 'sample', loadChildren: ()=> SampleModule }
 ];
-const rootRouting: ModuleWithProviders = RouterModule.forRoot(routes, { useHash: true, enableTracing: true });
+const rootRouting: ModuleWithProviders = RouterModule.forRoot(routes, { useHash: false, enableTracing: true });
 
 @NgModule({
   declarations: [
