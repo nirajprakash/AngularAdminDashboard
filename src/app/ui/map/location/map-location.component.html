@@ -15,12 +15,18 @@
 
         <div [mdc-elevation]="4" fxFlex class="map-card tdw-hover-move-top tdw-hover-card-up  mdc-color--white">
             <div class="tdw-padding-12" fxLayout="row" fxLayout.xs="row" fxLayoutAlign="start center">
-                <span class="mdc-color-text--grey-700 tdw-font-14 tdw-font-bold">Basic</span>
+                <span class="mdc-color-text--grey-700 tdw-font-14 tdw-font-bold">Markers</span>
 
             </div>
-            <agm-map [latitude]="lat" [longitude]="lng">
-                <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
+            <agm-map 
+            [zoom]="13" 
+            [latitude]="12.960506" 
+            [longitude]="77.565633"
+            [styles]="_vmMapStyle">
+                <agm-marker 
+                [iconUrl]="'https://firebasestorage.googleapis.com/v0/b/angularadmindashboard.appspot.com/o/assets%2Fimg%2Fic_marker_red.png?alt=media'"  [latitude]="12.960506" [longitude]="77.565633"></agm-marker>
             </agm-map>
+            <!-- [iconUrl]="https://firebasestorage.googleapis.com/v0/b/angularadmindashboard.appspot.com/o/assets%2Fimg%2Fic_marker_red.png?alt=media&token=dace24dd-1e0d-41c9-9da0-9e21ba3acf39" -->
 
         </div>
     </div>
