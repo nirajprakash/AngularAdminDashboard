@@ -1,0 +1,23 @@
+.avatar {
+    display: inline-block;
+    border-radius: 50%;
+    height: 28px;
+    width: 28px;
+    text-align: center;
+    line-height: 28px;
+    font-size: 12px;
+    &.large {
+      height: 32px;
+      width: 32px;
+      line-height: 32px;
+    }
+  }
+
+  .message-toolbar {
+    width: 100%;
+    cursor: pointer;
+  }
+
+  .message-body{
+      padding: 24px 56px;
+  }

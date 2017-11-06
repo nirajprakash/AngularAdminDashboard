@@ -56,7 +56,8 @@ export class ContainerFullComponent {
       {
         name: "Location",
         icon: "location_on",
-        color: "mdc-color-text--grey-900"
+        color: "mdc-color-text--grey-900",
+        route:"/map/location"
       }, {
         name: "Route Track",
         icon: "navigation",

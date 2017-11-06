@@ -28,6 +28,10 @@ const routes: Routes = [
       {
         path: 'dashboard',
         loadChildren: './ui/dashboard/dashboard.module#DashboardModule'
+      },
+      {
+        path: 'map',
+        loadChildren: './ui/map/map.module#MapModule'
       }
     ]
   },

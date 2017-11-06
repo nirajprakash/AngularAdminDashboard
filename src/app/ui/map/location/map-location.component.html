@@ -1,0 +1,27 @@
+<div class="tdw-padding-36">
+
+    <div class="tdw-padding-top-8 tdw-padding-bottom-8" fxLayout="column" fxLayout.xs="row">
+        <div [mdc-elevation]="4" fxFlex class="map-card tdw-hover-move-top tdw-hover-card-up  mdc-color--white">
+            <div class="tdw-padding-12" fxLayout="row" fxLayout.xs="row" fxLayoutAlign="start center">
+                <span class="mdc-color-text--grey-700 tdw-font-14 tdw-font-bold">Basic</span>
+
+            </div>
+            <agm-map [latitude]="lat" [longitude]="lng">
+                <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
+            </agm-map>
+
+        </div>
+        <div fxFlex class="tdw-padding-8"></div>
+
+        <div [mdc-elevation]="4" fxFlex class="map-card tdw-hover-move-top tdw-hover-card-up  mdc-color--white">
+            <div class="tdw-padding-12" fxLayout="row" fxLayout.xs="row" fxLayoutAlign="start center">
+                <span class="mdc-color-text--grey-700 tdw-font-14 tdw-font-bold">Basic</span>
+
+            </div>
+            <agm-map [latitude]="lat" [longitude]="lng">
+                <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
+            </agm-map>
+
+        </div>
+    </div>
+</div>

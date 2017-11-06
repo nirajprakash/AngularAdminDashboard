@@ -1,11 +1,39 @@
-<div *ngFor="let mail of _vmMailList;" class="tdw-padding-top-8" fxLayout="column" fxLayout.xs="column">
-    <div  [mdc-elevation]="2" class="tdw-padding-20 mdc-color--white"
-        fxFlex="row" fxLayout.xs="row">
-        <div>
-            <img class="tdw-avatar-40 tdw-circle" src="assets/img/a10.jpg"/>
+<div class="tdw-card-normal mdc-color--white">
+    <div (opened)="opened = true" (closed)="opened = false" hideToggle="true">
+
+        <div class="message-toolbar tdw-padding-left-16  tdw-padding-right-16 tdw-padding-bottom-8 tdw-padding-top-8" fxLayoutAlign="start center" fxLayout="row">
+            <div fxFlex="50px" [fxShow]="!opened">
+                <span class="avatar mdc-theme--secondary-bg">
+                    {{avatar}}
+                </span>
+            </div>
+            <div fxFlex="20%" [fxShow]="!opened">
+                {{from}}
+            </div>
+            <div fxFlex fxFill class="message-subject">
+                {{subject}}
+            </div>
+            <div fxFlex="15%" class="btn-col">
+                
+            </div>
         </div>
-        <div  class="tdw-padding-left-12">
-            {{mail.message}}
+        <div class="message-body" fxLayout="row">
+            <div fxFlex="50px">
+                <span class="avatar mdc-theme--secondary-bg large">
+                    {{avatar}}
+                </span>
+            </div>
+            <div fxFlex>
+                <div class="message-body-toolbar">
+                    <span class="message-from">{{from}}</span>
+                    <span class="message-to">to me</span>
+                    <button mdc-button class="message-more">
+                        <mdc-icon>more_vert</mdc-icon>
+                    </button>
+                    
+                </div>
+                <div [innerHTML]="body"></div>
+            </div>
         </div>
     </div>
 </div>

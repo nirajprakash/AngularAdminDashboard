@@ -18,6 +18,11 @@ body {
   background: $mdc-theme-background;
 }
 
+span,h1,h2,h3,h4,h6,p,a{
+  font-family: $font-open-sans;
+  font-weight: 400;
+}
+
 // .demo-toolbar--primary {
 //   @include mdc-theme-prop(background-color, $mdc-theme-secondary);
 // }
