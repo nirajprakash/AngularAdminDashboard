@@ -6,7 +6,7 @@ import { FormsModule } from '@angular/forms';
 import { MaterialModule } from './../../material.module';
 import { FlexLayoutModule } from '@angular/flex-layout';
 
-import { AgmCoreModule } from '@agm/core';
+import { AgmCoreModule, AgmPolygon } from '@agm/core';
 
 import { MapLocationComponent} from './index';
 //import {ContainerSimpleComponent } from './../../containers'

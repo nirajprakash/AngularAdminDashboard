@@ -1,31 +1,82 @@
 <div class="tdw-padding-36">
 
-    <div class="tdw-padding-top-8 tdw-padding-bottom-8" fxLayout="column" fxLayout.xs="row">
-        <div [mdc-elevation]="4" fxFlex class="map-card tdw-hover-move-top tdw-hover-card-up  mdc-color--white">
-            <div class="tdw-padding-12" fxLayout="row" fxLayout.xs="row" fxLayoutAlign="start center">
-                <span class="mdc-color-text--grey-700 tdw-font-14 tdw-font-bold">Basic</span>
+    <div fxLayout="column">
+        <div class="tdw-padding-8" fxFlex>
+            <div [mdc-elevation]="4" class="map-card tdw-hover-move-top tdw-hover-card-up  mdc-color--white">
+                <div class="tdw-padding-12" fxLayout="row" fxLayout.xs="row" fxLayoutAlign="start center">
+                    <span class="mdc-color-text--grey-700 tdw-font-14 tdw-font-bold">Basic</span>
+
+                </div>
+                <agm-map [latitude]="lat" [longitude]="lng" [scrollwheel]="false">
+                    <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
+                </agm-map>
 
             </div>
-            <agm-map [latitude]="lat" [longitude]="lng" [scrollwheel]="false">
-                <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
-            </agm-map>
-
         </div>
         <div fxFlex class="tdw-padding-8"></div>
 
-        <div [mdc-elevation]="4" fxFlex class="map-card tdw-hover-move-top tdw-hover-card-up  mdc-color--white">
-            <div  fxLayout="row" fxLayout.xs="column">
-            <div fxFlex="240px" class="tdw-padding-20" fxLayout="column" >
-                <span class="mdc-color-text--grey-700 tdw-font-14 tdw-font-bold">Markers</span>
+        <div class="tdw-padding-8" fxFlex>
+            <div [mdc-elevation]="4" class="map-card tdw-hover-move-top tdw-hover-card-up  mdc-color--white">
+                <div fxLayout="row" fxLayout.xs="column">
+                    <div fxFlex="240px" class="tdw-padding-20" fxLayout="column">
+                        <span class="mdc-color-text--grey-700 tdw-font-14 tdw-font-bold">Markers</span>
+
+                    </div>
+                    <agm-map [zoom]="13" fxFlex [latitude]="12.960506" [longitude]="77.565633" [scrollwheel]="false" [styles]="_vmMapStyle">
+                        <agm-marker [iconUrl]="'https://firebasestorage.googleapis.com/v0/b/angularadmindashboard.appspot.com/o/assets%2Fimg%2Fic_marker_red.png?alt=media'"
+                            [latitude]="12.960506" [longitude]="77.565633"></agm-marker>
+
+                    </agm-map>
+                </div>
+                <!-- [iconUrl]="https://firebasestorage.googleapis.com/v0/b/angularadmindashboard.appspot.com/o/assets%2Fimg%2Fic_marker_red.png?alt=media&token=dace24dd-1e0d-41c9-9da0-9e21ba3acf39" -->
+
 
             </div>
-            <agm-map [zoom]="13" fxFlex [latitude]="12.960506" [longitude]="77.565633" [scrollwheel]="false" [styles]="_vmMapStyle">
-                <agm-marker [iconUrl]="'https://firebasestorage.googleapis.com/v0/b/angularadmindashboard.appspot.com/o/assets%2Fimg%2Fic_marker_red.png?alt=media'"
-                    [latitude]="12.960506" [longitude]="77.565633"></agm-marker>
-            </agm-map>
         </div>
-            <!-- [iconUrl]="https://firebasestorage.googleapis.com/v0/b/angularadmindashboard.appspot.com/o/assets%2Fimg%2Fic_marker_red.png?alt=media&token=dace24dd-1e0d-41c9-9da0-9e21ba3acf39" -->
 
+        <div class="tdw-padding-top-8" fxLayout="row" fxLayout.lt-md="column">
+            <div fxFlex class="tdw-padding-8">
+                <div [mdc-elevation]="4" class="map-card tdw-hover-move-top tdw-hover-card-up  mdc-color--white">
+                    <div class="tdw-padding-12" fxLayout="row" fxLayout.xs="row" fxLayoutAlign="start center">
+                        <span class="mdc-color-text--grey-700 tdw-font-14 tdw-font-bold">Polygone</span>
+
+                    </div>
+                    <agm-map [zoom]="14" [latitude]="12.93505" 
+                    [longitude]="77.62656" [scrollwheel]="false"
+                    [styles]="_vmMapStyle">
+                        <agm-polygon [paths]="_vmPolygon" 
+                        [strokeWeight]="2" 
+                        [strokeColor]="'#9c27b0'" 
+                        [fillColor]="'#ffccff'" [fillOpacity]="0.35"
+                        [polyDraggable]="true"></agm-polygon>
+                        
+                        <agm-circle [latitude]="12.960506" 
+                        [longitude]="77.565633" [radius]="500" [fillColor]="'red'" [circleDraggable]="true" [editable]="true">
+                        </agm-circle>
+                    </agm-map>
+                </div>
+            </div>
+
+            <div fxFlex class="tdw-padding-8">
+                <div [mdc-elevation]="4" class="map-card tdw-hover-move-top tdw-hover-card-up  mdc-color--white">
+                    <div class="tdw-padding-12" fxLayout="row" fxLayout.xs="row" fxLayoutAlign="start center">
+                        <span class="mdc-color-text--grey-700 tdw-font-14 tdw-font-bold">Polylines</span>
+
+                    </div>
+                    <agm-map [zoom]="14" [latitude]="12.93505" [longitude]="77.62656" [scrollwheel]="false" [styles]="_vmMapStyle">
+                        <agm-polyline  
+                        [strokeWeight]="2" 
+                        [strokeColor]="'#9c27b0'" >
+                            <agm-polyline-point *ngFor="let polyline of _vmPolyLines" [latitude]="polyline.lat" [longitude]="polyline.lng">
+                                
+                            </agm-polyline-point>
+                        </agm-polyline>
+                    </agm-map>
+                </div>
+            </div>
         </div>
+
     </div>
+
+
 </div>

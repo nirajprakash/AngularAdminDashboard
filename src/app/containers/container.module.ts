@@ -10,12 +10,12 @@ import { ContainerFullComponent, ContainerSimpleComponent } from './index';
         RouterModule
     ],
     declarations: [
-        ContainerFullComponent,
-        ContainerSimpleComponent
+        //ContainerFullComponent,
+        //ContainerSimpleComponent
     ],
     exports: [
-        ContainerFullComponent,
-        ContainerSimpleComponent
+        //ContainerFullComponent,
+        //ContainerSimpleComponent
     ]
 })
 export class ContainerModule { }
