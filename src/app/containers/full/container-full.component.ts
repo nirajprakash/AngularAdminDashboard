@@ -1,6 +1,6 @@
 import { Component, ViewChild } from '@angular/core';
 
-import { MdcTemporaryDrawerComponent } from '@angular-mdc/web';
+import { MdcTemporaryDrawer } from '@angular-mdc/web';
 @Component({
   selector: 'app-dashboard',
   templateUrl: './container-full.component.html',
@@ -10,7 +10,7 @@ export class ContainerFullComponent {
 
   isFixed: boolean = true;
 
-  @ViewChild('drawer') drawer: MdcTemporaryDrawerComponent;
+  @ViewChild('drawer') drawer: MdcTemporaryDrawer;
 
   _vmNavItems: any = {
     dashboard: [
