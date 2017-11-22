@@ -17,7 +17,7 @@ import {
 // ContainerFullComponent];
 
 const routes: Routes = [
-  { path: '', redirectTo: 'map', pathMatch: 'full' },
+  { path: '', redirectTo: 'dashboard', pathMatch: 'full' },
   {
     path: '',
     component: ContainerFullComponent,
