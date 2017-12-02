@@ -31,7 +31,7 @@ import { DashboardHomeComponent, DashboardInboxComponent, DashboardWidgetCompone
 export const routes: ModuleWithProviders = RouterModule.forChild([
   {
     path: '',
-    redirectTo: 'widget',
+    redirectTo: 'home',
     pathMatch: 'full',
   },
   {
