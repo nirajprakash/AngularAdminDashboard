@@ -4,7 +4,12 @@
 .tdw-font-comfortaa{
     font-family: $font-comfortaa;
 }
-
+.tdw-font-thin{
+    font-weight: $font-thin;
+}
+.tdw-font-lightest{
+    font-weight: $font-lightest;
+}
 .tdw-font-light{
     font-weight: $font-light;
 }
@@ -17,6 +22,10 @@
 
 .tdw-font-bolder{
     font-weight: $font-bolder;
+}
+
+.tdw-font-36{
+    font-size: $font-36;
 }
 
 .tdw-font-24{
