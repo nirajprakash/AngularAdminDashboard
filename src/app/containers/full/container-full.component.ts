@@ -17,7 +17,7 @@ export class ContainerFullComponent {
       {
         name: "Home",
         icon: "home",
-        route:"/dashboard",
+        route:"/dashboard/home",
         color: "mdc-color-text--purple"
       }, {
         name: "Analysis",
@@ -36,6 +36,7 @@ export class ContainerFullComponent {
       }, {
         name: "Widgets",
         icon: "widgets",
+        route:"/dashboard/widget",
         color: "mdc-color-text--blue-grey-700",
       }
 
