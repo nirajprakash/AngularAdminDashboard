@@ -8,6 +8,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 
 //import {} from 
 import { DashboardInboxModule} from './inbox/dashboard-inbox.module';
+import { WidgetModule} from './widget';
 
 import { DashboardHomeComponent, DashboardInboxComponent, DashboardWidgetComponent} from './index';
 //import {ContainerSimpleComponent } from './../../containers'
@@ -31,7 +32,7 @@ import { DashboardHomeComponent, DashboardInboxComponent, DashboardWidgetCompone
 export const routes: ModuleWithProviders = RouterModule.forChild([
   {
     path: '',
-    redirectTo: 'widget',
+    redirectTo: 'home',
     pathMatch: 'full',
   },
   {
@@ -74,15 +75,14 @@ export const routes: ModuleWithProviders = RouterModule.forChild([
     FormsModule,
     FlexLayoutModule,
     DashboardInboxModule,
+    WidgetModule,
     routes
   ],
   declarations: [
-    DashboardHomeComponent,
-    DashboardWidgetComponent
+    DashboardHomeComponent
   ],
   exports: [
-    DashboardHomeComponent,
-    DashboardWidgetComponent
+    DashboardHomeComponent
   ]
 })
 export class DashboardModule { }
