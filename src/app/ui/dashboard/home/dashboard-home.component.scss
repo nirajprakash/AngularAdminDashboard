@@ -13,7 +13,7 @@ body{
     height: auto;
     background: #2a225a;
     background: linear-gradient(to left,  #2a225a,#2e273f); 
-    
+    color: white;
 
     margin: 30px 140px;
     padding: 0px;
@@ -68,6 +68,11 @@ body{
     justify-content: center;
    
   }
+  sup {
+    vertical-align: super;
+    vertical-align: top;
+     font-size: 0.3em;
+}
   .content-items{
     flex-basis: 120px;
   
@@ -85,12 +90,12 @@ body{
     height: 70px;
     grid-column-gap: 8px;
     margin: 0 4px;
-   
+  
   }
   
 .country-time div:nth-child(even){
     background: #1b1c30;  
-  
+    
     
 }
   
@@ -102,9 +107,11 @@ body{
 ul li{
     list-style-type: none;
 }
-ul li p{
-    color: white;
+.country-time div p{
+   margin-left: -25px;
+   padding: 5px;
 }
+
 .earth-icon{
     display: flex;
     justify-content: center;
@@ -141,7 +148,7 @@ ul li p{
 }
  
 .material-icons{
-    margin-top: 16px;
+    margin-top: 18px;
    color: white;
 }
 
