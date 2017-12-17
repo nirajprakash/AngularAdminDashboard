@@ -9,18 +9,19 @@
 }
 .left-box{
     background-color: #DE5D83;
-    height: 330px;
-    width: 160px;
+    height: 360px;
+    width: 180px;
     border-radius: 5px 0 0 5px;
     box-shadow: 2px 2px 1px rgba(0,0,0,0.2);
-    padding: 20px;
+    padding: 30px;
     display: flex;
     flex-direction: column;
 }
 .grad {
+    background: #f857a6;  /* fallback for old browsers */
+   
+    background: linear-gradient(to left, #ff5858, #DE5D83); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     
-    background: rgb(214, 21, 57); 
-    background: linear-gradient(90deg, hsl(349, 67%, 60%), rgb(226, 48, 48));
 }
 .left-box-top{
     height: 500px;
@@ -33,9 +34,9 @@
     
 }
 .right-box{
-    padding: 20px;
-    height: 330px;
-    width: 280px;
+    padding: 30px;
+    height: 360px;
+    width: 300px;
     background-color: #FEFEFA;
     display: flex;
     flex-direction: column;
@@ -103,13 +104,13 @@
    
 }
 .weather-time-items{
-    padding: 2px;
+    padding: 15px;
     border-bottom: solid 1px rgba(0,0,0,.1);
  
 }
 .border-bottom{
-     border-bottom-style: solid;
-    border-bottom-color: coral;
+     border-bottom: 3px solid coral;
+    // border-bottom-color: coral;
    
     
 }
@@ -139,16 +140,15 @@ width: 100%;
 text-align: center;
 white-space: nowrap;
 display: flex;
-
 flex-flow: row nowrap;
 }
 .Table-row-item
 {     
-    font-size: 10px;
+    font-size: 12px;
 display: flex;
 flex-flow: row nowrap;
-flex-grow: 1;
-flex-basis: 0;
+justify-content: flex-end;
+flex:1 1 0;
 padding: 1em;
 word-break: break-word;
 white-space: nowrap;
@@ -156,4 +156,5 @@ white-space: nowrap;
 }
 .Table-row span{
     color:#DE5D83; 
+    font-weight: 400;
 }
