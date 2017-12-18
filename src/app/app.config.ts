@@ -26,7 +26,7 @@ export class ConfigAPI {
         // 'http://localhost:9081/api/'
         return {
             key: "50c2251aab1918622b2eaeda24529cdf",
-            url: 'http://api.openweathermap.org/data/2.5/'
+            url: 'https://api.openweathermap.org/data/2.5/'
         };
     }
 }
