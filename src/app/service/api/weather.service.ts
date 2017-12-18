@@ -1,11 +1,9 @@
 import { Injectable } from '@angular/core';
 import { Http, Headers, URLSearchParams, 
     RequestOptions, Request, Response } from '@angular/http';
-    import { Observable } from 'rxjs/Rx';
+    import { Observable } from 'rxjs/Observable';
 import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/catch';
-
-
 import { ConfigAPI } from '../../app.config';
 import { ModelWeather, ModelWeatherApi } from './models'
 
