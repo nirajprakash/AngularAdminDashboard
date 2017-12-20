@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,Input } from '@angular/core';
 import { ServiceWeather, ModelWeather } from './../../../../service/api';
 
 @Component({
@@ -8,6 +8,8 @@ import { ServiceWeather, ModelWeather } from './../../../../service/api';
 })
 export class WidgetWeatherChipComponent implements OnInit {
 
+  @Input() city = "bangalore";
+  @Input() country = "IN";
 
   _vmWeatherChip: ModelWeather;
   _mIsInProgress: boolean= false;
@@ -21,7 +23,7 @@ export class WidgetWeatherChipComponent implements OnInit {
 
     setTimeout(() => {
 
-      this.requestGetWeather('bangalore', 'IN');
+      this.requestGetWeather(this.city, this.country);
 
     });
   }
