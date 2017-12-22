@@ -2,7 +2,12 @@ import { BrowserModule } from '@angular/platform-browser';
 import { ModuleWithProviders, NgModule } from '@angular/core';
 import { MaterialModule } from './material.module';
 import { Routes, RouterModule } from '@angular/router';
+import { HttpModule } from '@angular/http';
+import {MomentModule} from 'angular2-moment';
 import { AppComponent } from './app.component';
+
+import { ServiceWeather } from './service/api';
+
 
 import { FlexLayoutModule } from '@angular/flex-layout';
 //import {ContainerModule} from './containers/container.module';
@@ -68,11 +73,13 @@ const rootRouting: ModuleWithProviders = RouterModule.forRoot(routes, { useHash:
   ],
   imports: [
     BrowserModule,
+    HttpModule,
     MaterialModule,
     FlexLayoutModule,
+    MomentModule,
     rootRouting
   ],
-  providers: [],
+  providers: [ServiceWeather],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

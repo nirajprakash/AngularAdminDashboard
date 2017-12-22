@@ -1,4 +1,4 @@
-<div class="weather-container">
+<div *ngIf="_vmWeatherChip" class="weather-container">
     <div class="weather-bg">
         <div class="sun-circle3"></div>
         <div class="sun-circle2"></div>
@@ -8,15 +8,15 @@
         <div class="weather-content-inner">
             <div class="title-top">
                 <h1 class="weather-status tdw-font-open-sans tdw-font-normal tdw-font-18">
-                    <mdc-icon class="sun tdw-font-14">wb_sunny</mdc-icon> Sunny</h1>
-                <h1 class="weather-time tdw-font-18">09:35</h1>
+                    <mdc-icon class="sun tdw-font-14">wb_sunny</mdc-icon>{{_vmWeatherChip.main}}</h1>
+                <h1 class="weather-time tdw-font-18">{{(_vmWeatherChip.dt | amFromUnix) | amDateFormat:'hh:mmA'}}</h1>
             </div>
             <div class="title-bottom">
-                <h1 class="weather-temp tdw-font-comfortaa tdw-font-32 tdw-font-normal">72
+                <h1 class="weather-temp tdw-font-comfortaa tdw-font-32 tdw-font-normal">{{_vmWeatherChip.temp}}
                     <span class="weather-temp-type  tdw-font-thin tdw-font-30">&#8457;</span>
                 </h1>
                 <h1 class="weather-location tdw-font-12">
-                    <mdc-icon class="material-icons tdw-font-10">place</mdc-icon> Raleigh, NC</h1>
+                    <mdc-icon class="material-icons tdw-font-10">place</mdc-icon> {{_vmWeatherChip.city}}, {{_vmWeatherChip.country}}</h1>
             </div>
         </div>
     </div>
