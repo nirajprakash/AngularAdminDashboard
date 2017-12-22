@@ -11,7 +11,9 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { WidgetWeatherChipComponent,
     WidgetWeatherComponent,
      DashboardWidgetComponent,
-    WidgetAlarmComponent} from './index';
+    WidgetAlarmComponent,
+
+  WidgetAlarmListComponent} from './index';
 
 
 
@@ -27,7 +29,8 @@ import { WidgetWeatherChipComponent,
     WidgetWeatherChipComponent,
     WidgetWeatherComponent,
     DashboardWidgetComponent,
-    WidgetAlarmComponent
+    WidgetAlarmComponent,
+    WidgetAlarmListComponent
   ],
   exports: [
     DashboardWidgetComponent
