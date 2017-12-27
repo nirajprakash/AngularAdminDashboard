@@ -1,10 +1,59 @@
 <div *ngIf="_vmWeatherChip" class="weather-container">
     <div class="weather-bg">
-        <div class="sun-circle3"></div>
+        <!-- <div class="sun-circle3"></div>
         <div class="sun-circle2"></div>
-        <div class="sun-circle1"></div>
+        <div class="sun-circle1"></div> 
+               <div id="scene">
+            <img class="cloud sml" src="assets/img/cloud_sml.png" width="70" height="36"/>
+            <img class="cloud med" src="assets/img/cloud_med.png" width="100" height="52"/>
+            <img class="cloud lrg" src="assets/img/cloud_lrg.png" width="130" height="67"/>
+              </div>
+        -->
+
+        <!-- <div class=wrapper>
+            <div class=cloud>
+                <img class="cloud sml" src="assets/img/cloud_sml.png" width="70" height="36"/>
+            </div>
+            <div class=rain>
+                <div class=drop></div>
+                <div class=drop></div>
+                <div class=drop></div>
+                <div class=drop></div>
+                <div class=drop></div>
+            </div>
+            <div class=surface>
+                <div class=hit></div>
+                <div class=hit></div>
+                <div class=hit></div>
+                <div class=hit></div>
+                <div class=hit></div>
+            </div>
+        </div> -->
+
+        <div class="icon">
+            <div class="cloud med">
+                 <img  src="assets/img/cloud_med.png" width="70" height="36"/>
+            </div>
+            <div class="sun-shower">
+              <div class="rays"></div>
+            </div>
+             <div class=rain>
+                          <div class=drop></div>
+                          <div class=drop></div>
+                          <div class=drop></div>
+                          <div class=drop></div>
+                          <div class=drop></div>
+                      </div>
+                      <div class=surface>
+                          <div class=hit></div>
+                          <div class=hit></div>
+                          <div class=hit></div>
+                          <div class=hit></div>
+                          <div class=hit></div>
+                      </div>
+          </div>
     </div>
-    <div class="tdw-padding-12 weather-content">
+    <div class="weather-content tdw-padding-20 ">
         <div class="weather-content-inner">
             <div class="title-top">
                 <h1 class="weather-status tdw-font-open-sans tdw-font-normal tdw-font-18">
@@ -20,22 +69,5 @@
             </div>
         </div>
     </div>
-
-
-
-    <!-- <div class="title">
-                        <h1 class="Condition tdw-font-open-sans tdw-font-thin tdw-font-20">
-                              <mdc-icon class="sun tdw-font-12">wb_sunny</mdc-icon> Sunny</h1>
-                            <div class="title-right"><span class="Time  tdw-font-16">09:35</span></div>
-                        
-                    </div>
-                    <div>
-                    <h1 class="Temp tdw-font-comfortaa tdw-font-32 tdw-font-normal">72
-                        <span class="F tdw-font-thin tdw-font-30">&#8457;</span>
-                    </h1>
-                    <div class="bottom-right">
-                    <h1 class="Location tdw-font-12 tdw-font-lightest">
-                        <i class="material-icons locationIcon tdw-font-10">place</i> Raleigh, NC</h1>
-                    </div> -->
 
 </div>
