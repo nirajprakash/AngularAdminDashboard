@@ -96,11 +96,10 @@ h1{
     /*width 100px*/
     top: 80px;
     left: -80px;
-   
+
     animation-duration: 22s;
  }
  
-
  
  
  /* Clouds drifting */
@@ -121,7 +120,14 @@ h1{
     height: inherit;
     font-size: 1em; /* control icon size here */
 }
-  
+  .light-cloud{
+    position: absolute;
+    z-index: 1;
+    top: 35%;
+    left: 50%;
+    margin: -1.84375em;
+    filter: brightness(41%);
+  }
   .still-cloud {
     position: absolute;
     z-index: 1;
@@ -142,7 +148,17 @@ h1{
   .medium {
     top: 49px;
     left: 154px;
-   }
+    animation: enlarge-cloud;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+ }
+ 
+ @keyframes enlarge-cloud{
+  50%{
+      transform: scale(1.2);
+  }
+  
+}
 
   
   .sun-shower {
@@ -496,13 +512,14 @@ h1{
 .rotate img {
   position: absolute;
   display: block;
-  top: 71%;
-  left: 57%;
+  top: 79.9%;
+  left: 76.9%;
   margin: -75px 0 0 -75px;
   transform-origin: 50% 50%;
-  //transition: 60s;
   z-index: 800;
-   animation: rotate 1s infinite linear;
+  animation: rotate 1.5s infinite linear;
+  filter: hue-rotate(110deg) brightness(88%);
+
 }
 
 
@@ -519,8 +536,8 @@ h1{
 .rotor {
   position: absolute;
   display: block;
-  top: 49.5%;
-  left: 51%;
+  top: 49.3%;
+  left: 67.3%;
   width: 25px;
   height: 25px;
   margin: -13.5px 0 0 -14px;
@@ -532,12 +549,12 @@ h1{
 
 .pole {
   position: absolute;
-    display: block;
-    top: 50%;
-    left: 51%;
-    width: 5px;
-    height: 54px;
-    margin-left: -4.5px;
-    background-color: #c5b9b9;
-    z-index: 3;
+  display: block;
+  top: 50%;
+  left: 67.5%;
+  width: 5px;
+  height: 54px;
+  margin-left: -4.5px;
+  background-color: #c5b9b9;
+  z-index: 3;
 }

@@ -8,7 +8,7 @@
 // }
 
 .container{
-    
+    position: absolute;
     width: 300px;
     height: 500px;
     background: #2a225a;
@@ -20,9 +20,10 @@
     
 }
 .slide{
-        width: 100%;
-        max-width: 960px;
-        margin: 0 auto;
+    width: 100%;
+    max-width: 960px;
+    height: 54px;
+    margin: 0 auto;
       }
       
       nav{
@@ -58,118 +59,92 @@
         padding-bottom: 7px;
       }
     
-      .content{
-         
-        flex-direction: column;
+      .flex{
+      
         display: flex;
-        flex: 1 1 0;
-         justify-content: center;
+      
+        flex-direction: row;
+        color: antiquewhite;
+        align-items: center;
+        width: 292px;
+        height: 61px;
+        margin: 2px 3px;
+        background: #232437;
+    }
+    .flex-items{
+     
+        display: flex;
+        width: 100%;
+        height: inherit;
+        background-color: #232437;
+        color: white;
        
-      }
+        align-items: center;
+      
+        justify-content: flex-end;
+    }
+    .alarm-time {
+        position: absolute;
+        left: 8px;
+    }
+    p {
+        position: relative;
+        margin-right: 24px;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
       sup {
         vertical-align: super;
         vertical-align: top;
          font-size: 0.3em;
     }
-      .content-items{
-        flex-basis: 180px;
-        flex-direction: row; 
-        display: flex; 
-        align-items: center; 
-        justify-content: center;
-        vertical-align: middle;
-        text-align: center;
-        
-      }
-      .content-margin{
-        margin: 0;
-      }
-      .time{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-      .country-time{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        height: 70px;
-        grid-column-gap: 8px;
-        margin: 0 4px;  
-      }
-      
-    .country-time div:nth-child(even){
-        background: #1b1c30;  
-        
-        
-    }
-      
-    .country-time div:nth-child(odd){
-        background: #1b1c30;  
-       
-        
-    } 
+
+    
     ul li{
         list-style-type: none;
     }
     
     
-    .country-time div{
-       padding: 0px;
-    }
-    
-    .earth-icon {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    
-    }
-    .circle{
-        background:#ec0f3b;
-        display: flex;
-        width: 60px;
-        height: 60px;
-        border-radius: 100px;
-        flex-direction: column;
-        justify-content: center;
-        vertical-align: middle;
-        background-repeat: no-repeat;
-        // flex-direction: row; 
-         align-items: center; 
-        //  justify-content: center; 
-        // vertical-align: middle;
-    }
-.circle{
-    background:#ec0f3b;
+  
+.earth-icon {
     display: flex;
-    width: 60px;
-    height: 60px;
-    border-radius: 100px;
-    flex-direction: column;
     justify-content: center;
-    vertical-align: middle;
-    background-repeat: no-repeat;
-    // flex-direction: row; 
-     align-items: center; 
-     justify-content: center; 
-    vertical-align: middle;
-    // margin-top: 50px;
-   
-    animation: animate 3s linear infinite;
+    align-items: center;
+
+}
+
+.circle{
+background:#ec0f3b;
+display: flex;
+width: 60px;
+height: 60px;
+border-radius: 100px;
+flex-direction: column;
+justify-content: center;
+vertical-align: middle;
+background-repeat: no-repeat;
+// flex-direction: row; 
+ align-items: center; 
+ justify-content: center; 
+vertical-align: middle;
+margin-top: 50px;
+
+animation: animate 3s linear infinite;
 }
 
 @keyframes animate{
-    
-    0%{
-        box-shadow: 0 0 0 0 rgba(245, 3, 76,0.7),0 0 0 0 rgba(245, 3, 76,.7);
-    }
-    40%{
-        box-shadow: 0 0 0 0  rgba(245, 3, 76,.7),0 0 0 0 rgba(245, 3, 76,.7);
-    }
-    80%{
-        box-shadow: 0 0 0 0  rgba(245, 3, 76,.7),0 0 0 30px rgba(245, 3, 76,0);
-    }
-    100%{
-        box-shadow: 0 0 0 0  rgba(245, 3, 76,.7),0 0 0 30px rgba(245, 3, 76,0);
-    }
+
+0%{
+    box-shadow: 0 0 0 0 rgba(245, 3, 76,0.7),0 0 0 0 rgba(245, 3, 76,.7);
+}
+40%{
+    box-shadow: 0 0 0 0  rgba(245, 3, 76,.7),0 0 0 0 rgba(245, 3, 76,.7);
+}
+80%{
+    box-shadow: 0 0 0 0  rgba(245, 3, 76,.7),0 0 0 30px rgba(245, 3, 76,0);
+}
+100%{
+    box-shadow: 0 0 0 0  rgba(245, 3, 76,.7),0 0 0 30px rgba(245, 3, 76,0);
+}
 }
 
