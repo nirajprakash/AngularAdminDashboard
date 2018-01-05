@@ -13,7 +13,8 @@ import { WidgetWeatherChipComponent,
      DashboardWidgetComponent,
     WidgetAlarmComponent,
 
-  WidgetAlarmListComponent} from './index';
+  WidgetAlarmListComponent,
+WidgetDummyComponent} from './index';
 
 
 
@@ -30,7 +31,8 @@ import { WidgetWeatherChipComponent,
     WidgetWeatherComponent,
     DashboardWidgetComponent,
     WidgetAlarmComponent,
-    WidgetAlarmListComponent
+    WidgetAlarmListComponent,
+    WidgetDummyComponent
   ],
   exports: [
     DashboardWidgetComponent
