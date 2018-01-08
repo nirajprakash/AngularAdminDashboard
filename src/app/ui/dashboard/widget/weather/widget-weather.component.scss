@@ -2,13 +2,10 @@
 
 .left-box{
     background-color: #DE5D83;
-    height: 360px;
     width: 180px;
     border-radius: 5px 0 0 5px;
     box-shadow: 2px 2px 1px rgba(0,0,0,0.2);
     padding: 30px;
-    display: flex;
-    flex-direction: column;
 }
 .grad {
     background: #f857a6;  /* fallback for old browsers */
@@ -16,23 +13,14 @@
     background: linear-gradient(to left, #ff5858, #DE5D83); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     
 }
-.left-box-top{
-    height: 500px;
-    widows: 500px;
-    
-}
-.left-box-bottom{
-    height: 500px;
-    widows: 500px;
-    
-}
+
 .right-box{
     padding: 30px;
-    height: 360px;
-    width: 300px;
+    //height: 360px;
+    //width: 300px;
     background-color: #FEFEFA;
-    display: flex;
-    flex-direction: column;
+    //display: flex;
+    //flex-direction: column;
     border-radius: 0px 5px 5px 0;
     box-shadow: 2px 2px 1px rgba(0,0,0,0.2);
   

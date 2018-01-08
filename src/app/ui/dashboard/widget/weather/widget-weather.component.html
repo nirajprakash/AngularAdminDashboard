@@ -1,9 +1,8 @@
 <div class="parent tdw-margin-12">
     <div class="box" fxLayout="row">
-        <div class="left-box grad">
-            <div class="left-box-top">
-                <p class="tdw-font-comfortaa mdc-color-text--white tdw-font-10">July 8 2016</p>
-            </div>
+        <div class="left-box grad" fxLayout="column">
+            <p class="tdw-font-comfortaa mdc-color-text--white tdw-font-10">July 8 2016</p>
+            <div fxFlex></div>
             <div class="left-box-bottom">
                 <span class="tdw-font-48 tdw-font-open-sans tdw-font-light mdc-color-text--white">24
                     <sup>&#176;</sup>
@@ -14,82 +13,84 @@
 
         </div>
 
-        <div class="box right-box">
+        <div class="box right-box" fxFlex>
+            <div fxLayout="column">
 
-            <div class="title title-border-bottom tdw-font-comfortaa">
-                <div class="title-item tdw-font-arial tdw-font-16 mdc-color-text--grey">Statistics</div>
-                <div style="flex:1 0 0px;"></div>
-                <div class="title-item mdc-color-text--pink tdw-font-12">more</div>
-            </div>
-
-
-            <div class="weather mdc-color-text--grey ">
-
-                <div class="weather-child mdc-color-text--pink-300">
-                    <mdc-icon class="sun tdw-font-38">wb_sunny</mdc-icon>
-                    <br>
-                    <span class="tdw-font-lightest">35%</span>
-                </div>
-                <div class="weather-child mdc-color-text--pink-300">
-                    <mdc-icon class="wind tdw-font-38">wb_sunny</mdc-icon>
-                    <br>
-                    <span class="tdw-font-lightest">35%</span>
-                </div>
-                <div class="weather-child mdc-color-text--pink-300">
-                    <mdc-icon class="sky tdw-font-38">wb_sunny</mdc-icon>
-                    <br>
-                    <span class="tdw-font-lightest">35%</span>
-                </div>
-                <div class="weather-child mdc-color-text--pink-300">
-                    <mdc-icon class="sun tdw-font-38">wb_sunny</mdc-icon>
-                    <br>
-                    <span class="tdw-font-lightest">35%</span>
+                <div class="title title-border-bottom tdw-font-comfortaa">
+                    <div class="title-item tdw-font-arial tdw-font-16 mdc-color-text--grey">Statistics</div>
+                    <div style="flex:1 0 0px;"></div>
+                    <div class="title-item mdc-color-text--pink tdw-font-12">more</div>
                 </div>
 
-            </div>
-            <div class="weather-time tdw-font-14 mdc-color-text--grey tdw-font-open-sans">
 
-                <div class="weather-time-items border-bottom tdw-font-16 mdc-color-text--black">Today</div>
-                <div class="weather-time-items">Week</div>
-                <div class="weather-time-items">Month</div>
-                <div class="weather-time-items blank"></div>
-            </div>
+                <div class="weather mdc-color-text--grey ">
 
-
-            <div class="Table mdc-color-text--grey tdw-font-comfortaa">
-
-                <div class="Table-row">
-                    <div class="Table-row-item" data-header="Header1">1:00pm</div>
-                    <div class="Table-row-item" data-header="Header2">Sunny</div>
-                    <div class="Table-row-item" data-header="Header3">
-                        <span>24&#x2103;</span>
+                    <div class="weather-child mdc-color-text--pink-300">
+                        <mdc-icon class="sun tdw-font-38">wb_sunny</mdc-icon>
+                        <br>
+                        <span class="tdw-font-lightest">35%</span>
+                    </div>
+                    <div class="weather-child mdc-color-text--pink-300">
+                        <mdc-icon class="wind tdw-font-38">wb_sunny</mdc-icon>
+                        <br>
+                        <span class="tdw-font-lightest">35%</span>
+                    </div>
+                    <div class="weather-child mdc-color-text--pink-300">
+                        <mdc-icon class="sky tdw-font-38">wb_sunny</mdc-icon>
+                        <br>
+                        <span class="tdw-font-lightest">35%</span>
+                    </div>
+                    <div class="weather-child mdc-color-text--pink-300">
+                        <mdc-icon class="sun tdw-font-38">wb_sunny</mdc-icon>
+                        <br>
+                        <span class="tdw-font-lightest">35%</span>
                     </div>
 
                 </div>
-                <div class="Table-row">
-                    <div class="Table-row-item" data-header="Header1">2:00pm</div>
-                    <div class="Table-row-item" data-header="Header2">Cloudy</div>
-                    <div class="Table-row-item" data-header="Header3">
-                        <span>22&#x2103;</span>
-                    </div>
+                <div class="weather-time tdw-font-14 mdc-color-text--grey tdw-font-open-sans">
 
+                    <div class="weather-time-items border-bottom tdw-font-16 mdc-color-text--black">Today</div>
+                    <div class="weather-time-items">Week</div>
+                    <div class="weather-time-items">Month</div>
+                    <div class="weather-time-items blank"></div>
                 </div>
-                <div class="Table-row">
-                    <div class="Table-row-item" data-header="Header1">3:00pm</div>
-                    <div class="Table-row-item" data-header="Header2">Partly Cloudy</div>
-                    <div class="Table-row-item" data-header="Header3">
-                        <span>23&#x2103;</span>
+
+
+                <div class="Table mdc-color-text--grey tdw-font-comfortaa">
+
+                    <div class="Table-row">
+                        <div class="Table-row-item" data-header="Header1">1:00pm</div>
+                        <div class="Table-row-item" data-header="Header2">Sunny</div>
+                        <div class="Table-row-item" data-header="Header3">
+                            <span>24&#x2103;</span>
+                        </div>
+
                     </div>
+                    <div class="Table-row">
+                        <div class="Table-row-item" data-header="Header1">2:00pm</div>
+                        <div class="Table-row-item" data-header="Header2">Cloudy</div>
+                        <div class="Table-row-item" data-header="Header3">
+                            <span>22&#x2103;</span>
+                        </div>
 
-                </div>
-                <div class="Table-row">
-                    <div class="Table-row-item" data-header="Header1">4:00pm</div>
-                    <div class="Table-row-item" data-header="Header2">Sunny</div>
-                    <div class="Table-row-item" data-header="Header3">
-                        <span>24&#x2103;</span>
                     </div>
+                    <div class="Table-row">
+                        <div class="Table-row-item" data-header="Header1">3:00pm</div>
+                        <div class="Table-row-item" data-header="Header2">Partly Cloudy</div>
+                        <div class="Table-row-item" data-header="Header3">
+                            <span>23&#x2103;</span>
+                        </div>
+
+                    </div>
+                    <div class="Table-row">
+                        <div class="Table-row-item" data-header="Header1">4:00pm</div>
+                        <div class="Table-row-item" data-header="Header2">Sunny</div>
+                        <div class="Table-row-item" data-header="Header3">
+                            <span>24&#x2103;</span>
+                        </div>
 
 
+                    </div>
                 </div>
             </div>
         </div>
