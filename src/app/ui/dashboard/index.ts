@@ -1,3 +1,4 @@
+export * from './analysis';
 export * from './home';
 export * from './inbox';
 export * from './widget';

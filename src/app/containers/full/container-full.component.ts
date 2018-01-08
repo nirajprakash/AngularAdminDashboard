@@ -23,6 +23,7 @@ export class ContainerFullComponent {
         name: "Analysis",
         icon: "insert_charts",
         color: "mdc-color-text--brown",
+        route: "/dashboard/analysis"
 
       }, {
         name: "Inbox",
