@@ -1,55 +1,277 @@
-<div class="container tdw-card-shadow">
-    <div class="account">
-            <i class="material-icons tdw-margin-left-12">keyboard_arrow_left</i>
-            <p class="tdw-font-12 tdw-font-bold ">Your Account</p>
-            <i class="material-icons tdw-margin-right-12">dashboard</i>
-    </div>
-    <div class="graph"></div>
-    <div class="report">
-        <div class="report-item">
-                <img class="img-circle tdw-margin-12" src="assets/img/hdfc.png"   width="30" height="30">
-            
-            <div class="detail">
-                    <p class="tdw-font-12 tdw-font-bold ">HDFC Bank</p>
-                        <p  class="tdw-font-10 mdc-color-text--grey tdw-font-bold">Transfer to bank <span class="mdc-color-text--green-500 tdw-font-bold">-Completed</span></p>
-            </div>
-            <div class="cash tdw-margin-right-12 tdw-font-bolder">
-                    <p  class="tdw-font-10 mdc-color-text--red-500 ">-Rs. 2400</p>
-            </div>
-                       
-          </div>
-     
-        <div class="report-item">
-                <img class="img-circle tdw-margin-12" src="assets/img/Alfa_romeo_logo.png"  width="30" height="30">
-                <div class="detail ">
-                        <p  class="tdw-font-12 tdw-font-bold">ALPHA ROMEO</p>
+<div class="chat-container ">
+        <div class="chat-details" fxLayout="column">
+                <img class="img-circle" src="assets/img/a10.jpg" width="40" height="40">
+
+                <mdc-icon class="mdc-color-text--white" role="button">message</mdc-icon>
+                <mdc-icon class="mdc-color-text--white" role="button">group</mdc-icon>
+                <mdc-icon class="mdc-color-text--white" role="button">contacts</mdc-icon>
+                <mdc-icon class="mdc-color-text--white" role="button">notes</mdc-icon>
+
+                <button mdc-button [disableRipple]="true">
+                        <mdc-icon class="mdc-color-text--white" role="button">settings</mdc-icon>
+                </button>
+
+                <mdc-icon class="mdc-color-text--white" fxFlex="1" role="button">notes</mdc-icon>
+        </div>
+        <div class="chat-contact">
+
+                <div class="header">
+                        <div class="flexsearch--wrapper">
+                                <form class="flexsearch--form" action="#" method="post">
+                                        <div class="flexsearch--input-wrapper">
+                                                <input class="flexsearch--input" type="Search" placeholder="Search">
+                                        </div>
+                                        <div class="search-user">
+                                                <i class="mdc-icon-toggle material-icons" role="button" aria-label="Search">search</i>
+                                        </div>
+                                </form>
+                        </div>
                 </div>
-                <div class="cash tdw-margin-right-12 tdw-font-bolder">
-                        <p  class="tdw-font-10 mdc-color-text--red-500">-Rs. 999</p>
+
+                <div class="chat-box scrollbar" id="style-1">
+                        <div class="user-item">
+                                <div class="profile-pic">
+                                        <img class="img-circle" src="assets/img/avatar.jpg" width="35" height="35">
+                                </div>
+                                <div class="detail">
+                                        <p class="tdw-font-12 tdw-font-bold">Niraj Prakash</p>
+                                        <p class="tdw-font-10 mdc-color-text--grey tdw-font-bold">Here we go..</p>
+                                </div>
+                                <div class="cash tdw-margin-right-12 tdw-font-bolder">
+                                        <div class="notification">
+                                                <p class="tdw-font-10 mdc-color-text--white">1</p>
+                                        </div>
+
+                                        <p class="tdw-font-10 mdc-color-text--blue-500 ">10 mins</p>
+                                </div>
+
+                        </div>
+                        <div class="user-item">
+                                <div class="profile-pic">
+                                        <img class="img-circle" src="assets/img/a.jpeg" width="35" height="35">
+                                </div>
+                                <div class="detail">
+                                        <p class="tdw-font-12 tdw-font-bold">John Doe</p>
+                                        <p class="tdw-font-10 mdc-color-text--grey tdw-font-bold">Helloo..</p>
+                                </div>
+                                <div class="cash tdw-margin-right-12 tdw-font-bolder">
+
+
+                                        <p class="tdw-font-10 mdc-color-text--blue-500 ">40 mins</p>
+                                </div>
+
+                        </div>
+                        <div class="user-item">
+                                <div class="profile-pic">
+                                        <img class="img-circle" src="assets/img/b.jpeg" width="35" height="35">
+                                </div>
+                                <div class="detail">
+                                        <p class="tdw-font-12 tdw-font-bold">Dery Shee</p>
+                                        <p class="tdw-font-10 mdc-color-text--grey tdw-font-bold">will be ther..</p>
+                                </div>
+                                <div class="cash tdw-margin-right-12 tdw-font-bolder">
+
+
+                                        <p class="tdw-font-10 mdc-color-text--blue-500 ">42 mins</p>
+                                </div>
+
+                        </div>
+                        <div class="user-item">
+                                <div class="profile-pic">
+                                        <img class="img-circle" src="assets/img/c.jpeg" width="35" height="35">
+                                </div>
+                                <div class="detail">
+                                        <p class="tdw-font-12 tdw-font-bold">Musabbil shah</p>
+                                        <p class="tdw-font-10 mdc-color-text--grey tdw-font-bold">Lets see..</p>
+                                </div>
+                                <div class="cash tdw-margin-right-12 tdw-font-bolder">
+
+
+                                        <p class="tdw-font-10 mdc-color-text--blue-500 ">1 hr</p>
+                                </div>
+
+                        </div>
+                        <div class="user-item">
+                                <div class="profile-pic">
+                                        <img class="img-circle" src="assets/img/d.jpeg" width="35" height="35">
+                                </div>
+                                <div class="detail">
+                                        <p class="tdw-font-12 tdw-font-bold">Sherlock homes</p>
+                                        <p class="tdw-font-10 mdc-color-text--grey tdw-font-bold">Go go go..</p>
+                                </div>
+                                <div class="cash tdw-margin-right-12 tdw-font-bolder">
+
+
+                                        <p class="tdw-font-10 mdc-color-text--blue-500 ">2 hr</p>
+                                </div>
+
+                        </div>
+                        <div class="user-item">
+                                <div class="profile-pic">
+                                        <img class="img-circle" src="assets/img/e.jpeg" width="35" height="35">
+                                </div>
+                                <div class="detail">
+                                        <p class="tdw-font-12 tdw-font-bold">Jason sthathom</p>
+                                        <p class="tdw-font-10 mdc-color-text--grey tdw-font-bold">Hey dude..</p>
+                                </div>
+                                <div class="cash tdw-margin-right-12 tdw-font-bolder">
+
+
+                                        <p class="tdw-font-10 mdc-color-text--blue-500 ">tomorrow</p>
+                                </div>
+
+                        </div>
+                        <div class="user-item">
+                                <div class="profile-pic">
+                                        <img class="img-circle" src="assets/img/f.jpeg" width="35" height="35">
+                                </div>
+                                <div class="detail">
+                                        <p class="tdw-font-12 tdw-font-bold">Stainlee</p>
+                                        <p class="tdw-font-10 mdc-color-text--grey tdw-font-bold">avengers are dying..</p>
+                                </div>
+                                <div class="cash tdw-margin-right-12 tdw-font-bolder">
+                                       
+
+                                        <p class="tdw-font-10 mdc-color-text--blue-500 ">10 mins</p>
+                                </div>
+
+                        </div>
+                        <div class="user-item">
+                                <div class="profile-pic">
+                                        <img class="img-circle" src="assets/img/g.jpeg" width="35" height="35">
+                                </div>
+                                <div class="detail">
+                                        <p class="tdw-font-12 tdw-font-bold">Client</p>
+                                        <p class="tdw-font-10 mdc-color-text--grey tdw-font-bold">Meeting cancel...</p>
+                                </div>
+                                <div class="cash tdw-margin-right-12 tdw-font-bolder">
+                                        <div class="notification">
+                                                <p class="tdw-font-10 mdc-color-text--white">1</p>
+                                        </div>
+
+                                        <p class="tdw-font-10 mdc-color-text--blue-500 ">yesterday</p>
+                                </div>
+
+                        </div>
+                        <div class="user-item">
+                                <div class="profile-pic">
+                                        <img class="img-circle" src="assets/img/h.jpeg" width="35" height="35">
+                                </div>
+                                <div class="detail">
+                                        <p class="tdw-font-12 tdw-font-bold">Stranger</p>
+                                        <p class="tdw-font-10 mdc-color-text--grey tdw-font-bold">Here we go..</p>
+                                </div>
+                                <div class="cash tdw-margin-right-12 tdw-font-bolder">
+                                        <div class="notification">
+                                                <p class="tdw-font-10 mdc-color-text--white">1</p>
+                                        </div>
+
+                                        <p class="tdw-font-10 mdc-color-text--blue-500 ">yesterday</p>
+                                </div>
+
+                        </div>
+                        <div class="user-item">
+                                <div class="profile-pic">
+                                        <img class="img-circle" src="assets/img/i.jpeg" width="35" height="35">
+                                </div>
+                                <div class="detail">
+                                        <p class="tdw-font-12 tdw-font-bold">Cool Dude</p>
+                                        <p class="tdw-font-10 mdc-color-text--grey tdw-font-bold">Here we go..</p>
+                                </div>
+                                <div class="cash tdw-margin-right-12 tdw-font-bolder">
+                                        <div class="notification">
+                                                <p class="tdw-font-10 mdc-color-text--white">1</p>
+                                        </div>
+
+                                        <p class="tdw-font-10 mdc-color-text--blue-500 ">yesterday</p>
+                                </div>
+
+                        </div>
+
                 </div>
         </div>
-        <div class="report-timeline">
-                <span  class="tdw-margin-left-12 tdw-font-12 mdc-color-text--grey tdw-font-bold">Jan 3, 2018</span>
+
+        <div class="chat-wrapper ">
+
+                <div class="chat-body-header">
+                        <div class="current-chat-user">
+                                <div class="profile-pic">
+                                        <img class="img-circle" src="assets/img/avatar.jpg" width="35" height="35">
+                                </div>
+                                <div class="detail">
+                                        <p class="tdw-font-12 tdw-font-bold">Niraj Prakash</p>
+                                        <p class="tdw-font-10 mdc-color-text--grey tdw-font-bold">online</p>
+                                </div>
+                        </div>
+                        <div class="btn-container">
+                                <button mdc-button>
+                                        <mdc-icon class="mdc-color-text--grey">voice_chat</mdc-icon>
+                                </button>
+                                <button mdc-button>
+                                        <mdc-icon class="mdc-color-text--grey">call</mdc-icon>
+                                </button>
+                                <button mdc-button>
+                                        <mdc-icon class="mdc-color-text--grey">more_vert</mdc-icon>
+                                </button>
+                        </div>
+                </div>
+
+                <div class="chat-body scrollbar" id="style-1">
+
+                        <section class="messages">
+                                <section>
+                                        <h3 class="msg--date">Today - 19:44</h3>
+                                        <div class="msg msg--me">
+                                                <blockquote>Dad! You killed the zombie Flanders!</blockquote>
+                                        </div>
+                                        <div class="msg msg--them">
+                                                <blockquote>He was a zombie?</blockquote>
+                                        </div>
+                                </section>
+                                <section>
+                                        <h3 class="msg--date">Yesterday - 08:17</h3>
+                                        <div class="msg msg--them">
+                                                <blockquote>Grrrr WHY YOU LITTLE...</blockquote>
+                                        </div>
+                                        <div class="msg msg--me">
+                                                <blockquote>It was like that when I got here!</blockquote>
+                                        </div>
+                                        <div class="msg msg--them">
+                                                <blockquote>Hehehe, that's my boy</blockquote>
+                                        </div>
+                                </section>
+                        </section>
+
+
+
+
+
+                        <!-- <div class="force-overflow"></div> -->
+
+                </div>
+
+                <div class="chat footer " fxLayout="row">
+
+                        <form>
+                                <input type="text" placeholder="Your message">
+                                <div class="msg-send">
+                                        <button mdc-button>
+                                                <mdc-icon class="mdc-color-text--grey">send</mdc-icon>
+                                        </button>
+                                </div>
+                        </form>
+                        <div class="chat-user-compose">
+                                <button mdc-button [class.demo-ripple-rounded]="rounded">
+                                        <mdc-icon class="mdc-color-text--grey">tag_faces</mdc-icon>
+                                </button>
+                                <button mdc-button>
+                                        <mdc-icon class="mdc-color-text--grey">attachment</mdc-icon>
+                                </button>
+                                <button mdc-button>
+                                        <mdc-icon class="mdc-color-text--grey">keyboard_voice</mdc-icon>
+                                </button>
+
+                        </div>
+                </div>
         </div>
-        <div class="report-item">
-                <img class="img-circle tdw-margin-12" src="assets/img/avatar.jpg"  width="30" height="30">
-                <div class="detail">
-                        <p  class="tdw-font-12 tdw-font-bold">Niraj Prakash</p>
-                        <p  class="tdw-font-10 mdc-color-text--grey tdw-font-bold">Money Received</p>
-                </div>
-                <div class="cash tdw-margin-right-12 tdw-font-bolder">
-                        <p  class="tdw-font-10 mdc-color-text--blue-500 ">+Rs. 4400</p>
-                </div>
-        </div>
-        <div class="report-item">
-                <img class="img-circle tdw-margin-12" src="assets/img/Food.ico"   width="30" height="30">
-                <div class="detail">
-                        <p  class="tdw-font-12 tdw-font-bold">Lunch</p>
-                        <p  class="tdw-font-10 mdc-color-text--grey tdw-font-bold">Payment debited</p>
-                </div>
-                <div class="cash tdw-margin-right-12 tdw-font-bolder">
-                        <p  class="tdw-font-10 mdc-color-text--red-500 ">-Rs. 400</p>
-                </div>
-        </div>
-    </div>
 </div>
